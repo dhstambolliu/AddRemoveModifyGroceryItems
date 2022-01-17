@@ -53,15 +53,15 @@ public class Main {
     }
 
     public static void addItem() {
-        System.out.print("Please enter the grocery item: ");
+        System.out.print("Please enter the grocery item to add in the list: ");
         groceryList.addGroceryItem(scanner.nextLine());
     }
 
     public static void modifyItem() {
-        System.out.print("Please enter item number: ");
+        System.out.print("Please enter item number you want to modify: ");
         int itemNumber = scanner.nextInt();
         scanner.nextLine();
-        System.out.println("Please enter replace item: ");
+        System.out.println("Please enter new item name: ");
         String newItem = scanner.nextLine();
         groceryList.modifyGroceryItem(itemNumber - 1, newItem);
     }
